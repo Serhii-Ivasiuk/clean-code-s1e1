@@ -44,6 +44,8 @@ var createNewTaskElement=function(taskString){
     editButton.className="edit";
 
     deleteButton.className="delete";
+    deleteButton.type='button';
+    deleteButton.setAttribute('aria-roledescription', 'Remove todo');
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
